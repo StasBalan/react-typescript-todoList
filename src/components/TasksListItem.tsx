@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Task } from '../models/task';
 
-interface Props {
+interface TasksListItemProps {
     task: Task;
     onDelete: (taskToDelete: Task) => void;
 }
 
-class TasksListItem extends React.Component<Props> {
+class TasksListItem extends React.Component<TasksListItemProps> {
 
     private onDeleteTask = () => {
         const { onDelete, task } = this.props;

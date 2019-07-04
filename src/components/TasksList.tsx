@@ -4,12 +4,12 @@ import TasksListItem from './TasksListItem';
 
 import { Task } from '../models/task';
 
-interface Props {
+interface TasksListProps {
     tasks: Task[];
     onDelete: (taskToDelete: Task) => void;
 }
 
-const TasksList: React.FC<Props> = ({tasks, onDelete}) => (
+const TasksList: React.FC<TasksListProps> = ({tasks, onDelete}) => (
     <ul>
         {tasks.map((task, index) => {
             return <TasksListItem  key={index}

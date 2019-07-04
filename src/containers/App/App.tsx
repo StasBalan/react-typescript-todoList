@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../App.css';
+import './App.css';
 
-import NewTaskForm from '../components/NewTaskForm';
-import TasksList from '../components/TasksList';
+import NewTaskForm from '../../components/NewTaskForm';
+import TasksList from '../../components/TasksList';
 
-import { Task } from '../models/task';
+import { Task } from '../../models/task';
 
 interface State {
     newTask: Task;
